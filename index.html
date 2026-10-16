@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上海市继续教育外语水平考试 · 模拟真题</title>
+  <style>
+  /* ===== Self-contained utility styles (no external CDN) ===== */
+  *,*::before,*::after { box-sizing: border-box; }
+  body { margin: 0; }
+  .max-w-4xl { max-width: 56rem; }
+  .max-w-xl { max-width: 36rem; }
+  .mx-auto { margin-left: auto; margin-right: auto; }
+  .min-h-screen { min-height: 100vh; }
+  .flex { display: flex; }
+  .flex-col { flex-direction: column; }
+  .flex-wrap { flex-wrap: wrap; }
+  .flex-1 { flex: 1 1 0%; }
+  .items-center { align-items: center; }
+  .items-start { align-items: flex-start; }
+  .justify-between { justify-content: space-between; }
+  .gap-1 { gap: 4px; } .gap-2 { gap: 8px; } .gap-3 { gap: 12px; } .gap-4 { gap: 16px; }
+  .shrink-0 { flex-shrink: 0; }
+  .hidden { display: none !important; }
+  .sticky { position: sticky; }
+  .top-0 { top: 0; } .top-20 { top: 5rem; }
+  .z-20 { z-index: 20; }
+  .grid { display: grid; }
+  .grid-cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .inline-block { display: inline-block; }
+  .space-y-1 > * + * { margin-top: 4px; }
+  .space-y-2 > * + * { margin-top: 8px; }
+  .space-y-4 > * + * { margin-top: 16px; }
+  .space-x-3 > * + * { margin-left: 12px; }
+  .p-2 { padding: 8px; } .p-3 { padding: 12px; } .p-4 { padding: 16px; } .p-5 { padding: 20px; } .p-6 { padding: 24px; }
+  .px-2 { padding-left: 8px; padding-right: 8px; } .px-3 { padding-left: 12px; padding-right: 12px; } .px-4 { padding-left: 16px; padding-right: 16px; } .px-6 { padding-left: 24px; padding-right: 24px; }
+  .py-1 { padding-top: 4px; padding-bottom: 4px; } .py-2 { padding-top: 8px; padding-bottom: 8px; } .py-3 { padding-top: 12px; padding-bottom: 12px; } .py-6 { padding-top: 24px; padding-bottom: 24px; }
+  .pt-3 { padding-top: 12px; }
+  .mb-1 { margin-bottom: 4px; } .mb-2 { margin-bottom: 8px; } .mb-3 { margin-bottom: 12px; } .mb-4 { margin-bottom: 16px; } .mb-5 { margin-bottom: 20px; } .mb-6 { margin-bottom: 24px; } .mb-8 { margin-bottom: 32px; }
+  .mt-1 { margin-top: 4px; } .mt-2 { margin-top: 8px; } .mt-4 { margin-top: 16px; } .mt-8 { margin-top: 32px; }
+  .w-6 { width: 1.5rem; } .w-8 { width: 2rem; } .w-full { width: 100%; }
+  .h-8 { height: 2rem; } .h-full { height: 100%; }
+  .max-h-[60vh] { max-height: 60vh; }
+  .min-h-[420px] { min-height: 420px; }
+  .overflow-y-auto { overflow-y: auto; }
+  .border { border: 1px solid #e5e7eb; }
+  .border-b { border-bottom: 1px solid #e5e7eb; }
+  .border-t { border-top: 1px solid #e5e7eb; }
+  .border-b-2 { border-bottom: 2px solid #e5e7eb; }
+  .border-transparent { border-color: transparent; }
+  .border-gray-100 { border-color: #f3f4f6; } .border-gray-200 { border-color: #e5e7eb; } .border-gray-300 { border-color: #d1d5db; }
+  .border-green-200 { border-color: #bbf7d0; } .border-green-500 { border-color: #22c55e; } .border-blue-500 { border-color: #3b82f6; } .border-blue-600 { border-color: #2563eb; }
+  .border-l-4 { border-left: 4px solid #e5e7eb; }
+  .rounded { border-radius: 4px; } .rounded-lg { border-radius: 8px; } .rounded-xl { border-radius: 12px; } .rounded-full { border-radius: 9999px; }
+  .rounded-r-lg { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+  .bg-white { background: #fff; } .bg-gray-50 { background: #f9fafb; } .bg-gray-100 { background: #f3f4f6; }
+  .bg-blue-50 { background: #eff6ff; } .bg-blue-600 { background: #2563eb; }
+  .bg-green-50 { background: #f0fdf4; } .bg-green-100 { background: #dcfce7; }
+  .bg-indigo-50 { background: #eef2ff; } .bg-indigo-100 { background: #e0e7ff; }
+  .bg-purple-50 { background: #faf5ff; } .bg-red-600 { background: #dc2626; }
+  .text-white { color: #fff; } .text-gray-500 { color: #6b7280; } .text-gray-600 { color: #4b5563; } .text-gray-700 { color: #374151; } .text-gray-800 { color: #1f2937; } .text-gray-900 { color: #111827; }
+  .text-blue-600 { color: #2563eb; } .text-blue-700 { color: #1d4ed8; }
+  .text-green-700 { color: #15803d; } .text-green-800 { color: #166534; } .text-green-900 { color: #14532d; }
+  .text-indigo-800 { color: #3730a3; } .text-indigo-900 { color: #312e81; } .text-purple-700 { color: #7e22ce; }
+  .text-red-700 { color: #991b1b; }
+  .font-bold { font-weight: 700; } .font-semibold { font-weight: 600; } .font-medium { font-weight: 500; }
+  .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .text-xs { font-size: 12px; } .text-sm { font-size: 14px; } .text-base { font-size: 16px; } .text-lg { font-size: 18px; } .text-2xl { font-size: 24px; } .text-3xl { font-size: 30px; }
+  .leading-relaxed { line-height: 1.625; }
+  .text-center { text-align: center; } .text-right { text-align: right; }
+  .whitespace-pre-wrap { white-space: pre-wrap; word-break: break-word; }
+  .shadow { box-shadow: 0 1px 3px rgba(0,0,0,.1); } .shadow-sm { box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+  .transition-all { transition: all .15s ease; }
+  [class~='py-0.5'] { padding-top: 2px; padding-bottom: 2px; }
+  [class~='py-2.5'] { padding-top: 10px; padding-bottom: 10px; }
+  [class~='mt-0.5'] { margin-top: 2px; }
+  [class~='h-1.5'] { height: 6px; }
+  [class~='hover:bg-blue-700']:hover { background: #1d4ed8; }
+  [class~='hover:bg-gray-50']:hover { background: #f9fafb; }
+  [class~='hover:bg-green-200']:hover { background: #bbf7d0; }
+  [class~='hover:bg-indigo-200']:hover { background: #c7d2fe; }
+  [class~='hover:bg-red-700']:hover { background: #b91c1c; }
+  [class~='hover:text-gray-800']:hover { color: #1f2937; }
+  @media (min-width: 768px) {
+    [class~='md:flex-row'] { flex-direction: row; }
+    [class~='md:grid-cols-2'] { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    [class~='md:grid-cols-3'] { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    [class~='md:w-64'] { width: 16rem; }
+    [class~='md:p-6'] { padding: 24px; }
+    [class~='md:p-8'] { padding: 32px; }
+    [class~='md:sticky'] { position: sticky; }
+    [class~='md:top-20'] { top: 5rem; }
+  }
+  /* 移动端优化：输入框 ≥16px 防止 iOS 聚焦自动缩放 */
+  @media (max-width: 767px) {
+    textarea, input, select { font-size: 16px !important; }
+  }
+  </style>
+  <style>
+    :root { --primary: #2563eb; --danger: #dc2626; --success: #16a34a; --warn: #ca8a04; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .option { transition: all .12s ease; }
+    .option:hover { background: #eff6ff; border-color: #93c5fd; }
+    .option.selected { background: #dbeafe; border-color: var(--primary); }
+    .option.correct { background: #dcfce7; border-color: var(--success); }
+    .option.wrong { background: #fee2e2; border-color: var(--danger); }
+    .hide { display: none !important; }
+    .fade-in { animation: fade .25s ease; }
+    @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .timer.warn { color: var(--warn); }
+    .timer.danger { color: var(--danger); animation: pulse 1s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.6} }
+    .navigator-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #e5e7eb; cursor: pointer; }
+    .navigator-dot.answered { background: var(--primary); }
+    .navigator-dot.current { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--primary); }
+    pre { white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<div id="app" class="max-w-4xl mx-auto min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white border-b sticky top-0 z-20 shadow-sm">
+    <div class="px-4 py-3 flex items-center justify-between">
+      <div>
+        <h1 class="text-lg font-bold text-gray-900">上海市继续教育外语水平考试 · 模拟真题</h1>
+        <p class="text-xs text-gray-500 mt-0.5">总分 150 分 · 120 分钟 · 参照官方样卷题型与难度编写</p>
+      </div>
+      <div class="text-right">
+        <div id="timer" class="text-2xl font-mono font-bold text-gray-800">02:00:00</div>
+        <div id="statusText" class="text-xs text-gray-500">未开始</div>
+      </div>
+    </div>
+    <div id="progressWrap" class="h-1.5 bg-gray-100 w-full hidden">
+      <div id="progressBar" class="h-full bg-blue-600 transition-all" style="width:0%"></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1 p-4">
+
+    <!-- Start screen -->
+    <div id="startScreen" class="bg-white rounded-xl shadow p-6 md:p-8 fade-in">
+      <div class="text-center mb-8">
+        <div class="inline-block p-3 rounded-full bg-blue-50 mb-3">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-2">全真模拟考试</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">本模拟卷按《上海市继续教育外语水平考试大纲（试行）》的题型、分值与时长设计。考试中可随时点击「查看解析」理解当前题目；交卷后可集中复盘错题。</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="border rounded-lg p-4 bg-gray-50">
+          <h3 class="font-semibold mb-2">题型分布</h3>
+          <ul class="text-sm space-y-1 text-gray-700">
+            <li>I. 听力理解：20 题 / 20 分 / 20 分钟</li>
+            <li>II. 词汇与结构：30 题 / 30 分 / 20 分钟</li>
+            <li>III. 完形填空：10 题 / 10 分 / 10 分钟</li>
+            <li>IV. 阅读理解：15 题 / 45 分 / 25 分钟</li>
+            <li>V. 段落翻译（汉译英）：1 题 / 20 分 / 15 分钟</li>
+            <li>VI. 短文写作：1 题 / 25 分 / 30 分钟</li>
+          </ul>
+        </div>
+        <div class="border rounded-lg p-4 bg-gray-50">
+          <h3 class="font-semibold mb-2">功能说明</h3>
+          <ul class="text-sm space-y-1 text-gray-700">
+            <li>• 倒计时 120 分钟，到时间自动交卷</li>
+            <li>• 答题进度自动保存，刷新不丢失</li>
+            <li>• 考试中可点击「查看解析」看讲解</li>
+            <li>• 交卷后展示得分与错题详解</li>
+            <li>• 听力部分提供音频文本稿与 TTS 朗读</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center space-x-3">
+        <button onclick="startExam(false)" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium">开始模考</button>
+        <button onclick="startExam(true)" class="px-6 py-2.5 border border-gray-300 hover:bg-gray-50 rounded-lg font-medium text-gray-700">继续上次</button>
+      </div>
+    </div>
+
+    <!-- Exam screen -->
+    <div id="examScreen" class="hidden">
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Question area -->
+        <div class="flex-1">
+          <div class="bg-white rounded-xl shadow p-5 md:p-6 min-h-[420px]">
+            <div class="flex items-center justify-between mb-4">
+              <span id="qMeta" class="text-sm text-gray-500 font-medium"></span>
+              <span id="qScore" class="text-xs px-2 py-1 bg-gray-100 rounded text-gray-600"></span>
+            </div>
+            <div id="qBody" class="mb-5"></div>
+            <div id="qOptions" class="space-y-2 mb-5"></div>
+
+            <!-- Explanation box -->
+            <div id="expBox" class="hidden border-l-4 border-green-500 bg-green-50 rounded-r-lg p-4 mb-5">
+              <div id="expTitle" class="font-semibold text-green-800 mb-1">解析</div>
+              <div id="expText" class="text-sm text-gray-800 leading-relaxed"></div>
+            </div>
+
+            <!-- Translation box -->
+            <div id="zhBox" class="hidden border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4 mb-5">
+              <div class="font-semibold text-blue-800 mb-2">中文翻译</div>
+              <div id="zhText" class="text-sm text-gray-800 leading-relaxed"></div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="toggleExplanation()" class="px-4 py-2 bg-green-100 hover:bg-green-200 text-green-800 rounded-lg text-sm font-medium">查看解析</button>
+              <button onclick="toggleTranslation()" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-lg text-sm font-medium">🔤 翻译</button>
+              <button onclick="playListeningAudio()" id="ttsBtn" class="hidden px-4 py-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-800 rounded-lg text-sm font-medium">🔊 朗读听力原文</button>
+            </div>
+          </div>
+
+          <!-- Nav buttons -->
+          <div class="flex justify-between items-center mt-4">
+            <button onclick="prevQuestion()" id="btnPrev" class="px-4 py-2 border rounded-lg text-sm hover:bg-gray-50">上一题</button>
+            <button onclick="nextQuestion()" id="btnNext" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm">下一题</button>
+          </div>
+        </div>
+
+        <!-- Sidebar navigator -->
+        <div class="w-full md:w-64 shrink-0">
+          <div class="bg-white rounded-xl shadow p-4 md:sticky md:top-20">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="font-semibold text-sm">答题卡</h3>
+              <button onclick="submitExam()" class="text-xs px-2 py-1 bg-red-600 text-white rounded hover:bg-red-700">交卷</button>
+            </div>
+            <div id="navigator" class="flex flex-wrap gap-2 max-h-[60vh] overflow-y-auto"></div>
+            <div class="mt-4 pt-3 border-t text-xs text-gray-500 space-y-1">
+              <div class="flex items-center gap-1"><span class="navigator-dot"></span> 未答</div>
+              <div class="flex items-center gap-1"><span class="navigator-dot answered"></span> 已答</div>
+              <div class="flex items-center gap-1"><span class="navigator-dot current"></span> 当前</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result screen -->
+    <div id="resultScreen" class="hidden bg-white rounded-xl shadow p-6 md:p-8 fade-in">
+      <h2 class="text-2xl font-bold mb-4">考试结果</h2>
+      <div class="grid md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-blue-50 rounded-lg p-4 text-center">
+          <div class="text-sm text-gray-600">总分</div>
+          <div id="resTotal" class="text-3xl font-bold text-blue-700">0</div>
+          <div class="text-xs text-gray-500">/ 150</div>
+        </div>
+        <div class="bg-green-50 rounded-lg p-4 text-center">
+          <div class="text-sm text-gray-600">正确率</div>
+          <div id="resRate" class="text-3xl font-bold text-green-700">0%</div>
+          <div class="text-xs text-gray-500">客观题</div>
+        </div>
+        <div class="bg-purple-50 rounded-lg p-4 text-center">
+          <div class="text-sm text-gray-600">用时</div>
+          <div id="resTime" class="text-3xl font-bold text-purple-700">--:--</div>
+          <div class="text-xs text-gray-500">已用时间</div>
+        </div>
+      </div>
+
+      <div id="sectionSummary" class="mb-6"></div>
+
+      <div class="flex gap-2 mb-4 border-b">
+        <button onclick="showResultTab('wrong')" id="tabWrong" class="px-3 py-2 text-sm font-medium border-b-2 border-blue-600 text-blue-700">错题详解</button>
+        <button onclick="showResultTab('all')" id="tabAll" class="px-3 py-2 text-sm font-medium border-b-2 border-transparent text-gray-600 hover:text-gray-800">全部解析</button>
+      </div>
+      <div id="resultList" class="space-y-4"></div>
+
+      <div class="mt-8 text-center space-x-3">
+        <button onclick="restartExam()" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">重新考试</button>
+        <button onclick="backToStart()" class="px-6 py-2.5 border rounded-lg hover:bg-gray-50">返回首页</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+const EXAM_DURATION = 120 * 60; // seconds
+const STORAGE_KEY = 'sh_continue_exam_state_v1';
+let questions = [];
+let current = 0;
+let answers = {};
+let timeLeft = EXAM_DURATION;
+let timerId = null;
+let startedAt = null;
+let submitted = false;
+let explanationShown = {};
+let translationShown = {};
+let explanationWrong = {};   // 标记某题的解析框是因"选错"而自动弹出的
+
+// Question bank
+try {
+questions = [
+  // ===== Part I 听力理解 (20) =====
+  // Section A News Reports (1-5)
+  {id:1, section:'I', type:'listening', title:'听力 · 新闻报道', score:1,
+   audio:`A recent report from the World Health Organization says that adults should reduce their daily sugar intake to less than 10 percent of total calories. The report further suggests that a further reduction to below 5 percent would bring additional health benefits.`,
+   question:`According to the report, what is the recommended daily sugar intake for adults?`,
+   options:['Less than 5% of total calories','Less than 10% of total calories','About 15% of total calories','No more than 20% of total calories'],
+   answer:'B',
+   exp:`新闻报道开头常点明核心数字。原文说 "reduce their daily sugar intake to less than 10 percent"，这是基本建议；"below 5 percent" 是进一步建议，不是题目问的推荐值。`},
+  {id:2, section:'I', type:'listening', title:'听力 · 新闻报道', score:1,
+   audio:`Shanghai authorities announced that starting next month, all new residential buildings in the downtown area must be equipped with charging facilities for electric vehicles. The policy aims to promote green transportation and reduce air pollution.`,
+   question:`What will be required in new downtown residential buildings?`,
+   options:['Solar power systems','Electric vehicle charging facilities','Public bicycle stations','Waste recycling centers'],
+   answer:'B',
+   exp:`抓关键词 "charging facilities for electric vehicles"，直接对应选项 B。`},
+  {id:3, section:'I', type:'listening', title:'听力 · 新闻报道', score:1,
+   audio:`A new study shows that people who walk at least 8,000 steps a day have a significantly lower risk of heart disease. Researchers tracked over 10,000 adults for five years and found that consistent walking is more important than speed.`,
+   question:`What did the study find about walking?`,
+   options:['Speed matters most.','8,000 steps a day reduces heart disease risk.','Only young adults benefit.','Walking is less effective than running.'],
+   answer:'B',
+   exp:`数字题。原文 "walk at least 8,000 steps a day have a significantly lower risk of heart disease"，与选项 B 一致。`},
+  {id:4, section:'I', type:'listening', title:'听力 · 新闻报道', score:1,
+   audio:`The city library will extend its opening hours until midnight on weekends starting this Friday. The move is expected to meet the growing demand from students and working professionals who prefer to study in the evening.`,
+   question:`Why is the library extending its weekend hours?`,
+   options:['To hire more staff','To meet evening study demand','To host weekend events','To reduce electricity costs'],
+   answer:'B',
+   exp:`原因题。原文 "meet the growing demand from students and working professionals who prefer to study in the evening" 即满足晚间学习需求。`},
+  {id:5, section:'I', type:'listening', title:'听力 · 新闻报道', score:1,
+   audio:`Local officials confirmed that the new subway line, which has been under construction for three years, will begin operation on December 1. The line will connect the airport to the city center in less than 40 minutes.`,
+   question:`When will the new subway line open?`,
+   options:['November 1','December 1','January 1','February 1'],
+   answer:'B',
+   exp:`时间题。原文 "will begin operation on December 1"，对应 B。`},
+
+  // Section B Short Dialogues (6-10)
+  {id:6, section:'I', type:'listening', title:'听力 · 短对话', score:1,
+   audio:`M: Excuse me, when does the next train to Hangzhou leave?\nW: At 3:30. But I'm afraid all the seats are sold out. You might try the bus instead.`,
+   question:`What does the woman suggest the man do?`,
+   options:['Wait for the next train','Buy a ticket later','Take a bus','Change his destination'],
+   answer:'C',
+   exp:`女士说 "You might try the bus instead"，建议他改乘大巴，选 C。`},
+  {id:7, section:'I', type:'listening', title:'听力 · 短对话', score:1,
+   audio:`W: I heard you got promoted. Congratulations!\nM: Thanks. I really appreciate it, but the new position means a lot more responsibility and longer hours.`,
+   question:`How does the man probably feel about his promotion?`,
+   options:['Proud but worried','Angry and disappointed','Completely relaxed','Uninterested'],
+   answer:'A',
+   exp:`男士先说感谢，后用 but 转折，表示虽然高兴但担心更多责任和更长工时，因此是 proud but worried。`},
+  {id:8, section:'I', type:'listening', title:'听力 · 短对话', score:1,
+   audio:`M: Did you finish reading the report?\nW: Not yet. I've only gone through the first two chapters. There are still five more to go.`,
+   question:`How many chapters does the report have in total?`,
+   options:['Two','Five','Seven','Nine'],
+   answer:'C',
+   exp:`已读 2 章，还剩 5 章，共 7 章。注意 not...only 结构表示强调。`},
+  {id:9, section:'I', type:'listening', title:'听力 · 短对话', score:1,
+   audio:`W: I'd like to return this shirt. It's the wrong size.\nM: No problem. Do you have the receipt with you?`,
+   question:`Where does the conversation most probably take place?`,
+   options:['In a restaurant','In a clothing store','At a bank','At a library'],
+   answer:'B',
+   exp:`关键词 return this shirt / wrong size / receipt 都指向服装店。`},
+  {id:10, section:'I', type:'listening', title:'听力 · 短对话', score:1,
+   audio:`M: Are you coming to the meeting this afternoon?\nW: I wish I could, but I have to finish a report before 5 o'clock.`,
+   question:`What does the woman mean?`,
+   options:['She will attend the meeting.','She cannot attend the meeting.','She will finish the meeting first.','She will hand in the report at the meeting.'],
+   answer:'B',
+   exp:`"I wish I could, but..." 是委婉拒绝的固定表达，说明她不能参加。`},
+
+  // Section C Passages (11-20) - Passage 1 (11-15)
+  {id:11, section:'I', type:'listening', title:'听力 · 短文 1', score:1,
+   audio:`Many people find it hard to fall asleep after using electronic devices before bed. This is because the blue light from screens reduces the production of melatonin, a hormone that helps control sleep. Experts recommend putting away phones and tablets at least one hour before bedtime.`,
+   question:`Why is it hard to sleep after using electronic devices?`,
+   options:['The devices are too noisy.','Blue light reduces melatonin.','The content is too exciting.','The room becomes too bright.'],
+   answer:'B',
+   exp:`原文明确说明 "blue light from screens reduces the production of melatonin"，即蓝光抑制褪黑素分泌。`},
+  {id:12, section:'I', type:'listening', title:'听力 · 短文 1', score:1,
+   audio:`(同上文)`,
+   question:`What does melatonin do?`,
+   options:['It improves eyesight.','It controls sleep.','It reduces stress.','It increases energy.'],
+   answer:'B',
+   exp:`同一句中 "a hormone that helps control sleep" 直接定义了 melatonin 的作用。`},
+  {id:13, section:'I', type:'listening', title:'听力 · 短文 1', score:1,
+   audio:`(同上文)`,
+   question:`What do experts recommend?`,
+   options:['Using devices until midnight','Keeping devices in the bedroom','Putting away devices one hour before bed','Taking more medicine'],
+   answer:'C',
+   exp:`原文 "putting away phones and tablets at least one hour before bedtime" 对应选项 C。`},
+  {id:14, section:'I', type:'listening', title:'听力 · 短文 1', score:1,
+   audio:`(同上文)`,
+   question:`Which kind of light is mentioned as a problem?`,
+   options:['Red light','Yellow light','Blue light','Green light'],
+   answer:'C',
+   exp:`细节题，选 blue light。`},
+  {id:15, section:'I', type:'listening', title:'听力 · 短文 1', score:1,
+   audio:`(同上文)`,
+   question:`What is the main topic of the passage?`,
+   options:['How to choose electronic devices','The effect of screen light on sleep','Ways to reduce noise at night','The importance of exercise'],
+   answer:'B',
+   exp:`主旨题。全文围绕电子屏幕蓝光影响睡眠展开，选 B。`},
+
+  // Passage 2 (16-20)
+  {id:16, section:'I', type:'listening', title:'听力 · 短文 2', score:1,
+   audio:`Tom had always wanted to learn cooking. Last month, he signed up for a weekend cooking class. At first, he found it difficult to follow the recipes. But after practicing every weekend, he can now cook several Chinese dishes. His family is very proud of him.`,
+   question:`What did Tom do last month?`,
+   options:['Opened a restaurant','Signed up for a cooking class','Bought a new kitchen','Wrote a recipe book'],
+   answer:'B',
+   exp:`"signed up for a weekend cooking class" 直接对应 B。`},
+  {id:17, section:'I', type:'listening', title:'听力 · 短文 2', score:1,
+   audio:`(同上文)`,
+   question:`How did Tom feel about cooking at first?`,
+   options:['It was easy.','It was difficult.','It was boring.','It was expensive.'],
+   answer:'B',
+   exp:`"At first, he found it difficult to follow the recipes"，选 B。`},
+  {id:18, section:'I', type:'listening', title:'听力 · 短文 2', score:1,
+   audio:`(同上文)`,
+   question:`How often did Tom practice cooking?`,
+   options:['Every day','Every weekend','Once a month','Never'],
+   answer:'B',
+   exp:`"after practicing every weekend"，选 B。`},
+  {id:19, section:'I', type:'listening', title:'听力 · 短文 2', score:1,
+   audio:`(同上文)`,
+   question:`What can Tom cook now?`,
+   options:['French dishes','Japanese dishes','Chinese dishes','Italian dishes'],
+   answer:'C',
+   exp:`"he can now cook several Chinese dishes"，选 C。`},
+  {id:20, section:'I', type:'listening', title:'听力 · 短文 2', score:1,
+   audio:`(同上文)`,
+   question:`How does Tom's family feel about him?`,
+   options:['Worried','Proud','Angry','Surprised'],
+   answer:'B',
+   exp:`"His family is very proud of him"，选 B。`},
+
+  // ===== Part II 词汇与结构 (30) =====
+  {id:21, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`She was so tired after the long journey that she could hardly ______ her eyes open.`,
+   options:['get','keep','hold','make'],
+   answer:'B',
+   exp:`keep one's eyes open 是固定搭配，表示"睁着眼睛"。hardly keep her eyes open 表示"几乎睁不开眼"。`},
+  {id:22, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`John's father has to retire because his heart is bad. Sometimes he is so ______ that he can't breathe.`,
+   options:['careless','breathless','hopeless','homeless'],
+   answer:'B',
+   exp:`breathless 意为"喘不过气的"，与 can't breathe 对应。`},
+  {id:23, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`After a lengthy discussion, they finally ______ an agreement.`,
+   options:['made','took','reached','carried'],
+   answer:'C',
+   exp:`reach an agreement 是固定搭配，表示"达成协议"。`},
+  {id:24, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`It is important ______ children to learn that older people should be taken care of.`,
+   options:['for','of','with','about'],
+   answer:'A',
+   exp:`句型 It is + adj. + for sb. + to do sth. 当形容词描述事情性质时用 for；描述人的品质时用 of。important 修饰事情，故用 for。`},
+  {id:25, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`He refused to ______ the fact that he had made a mistake in the report.`,
+   options:['admit','avoid','allow','accept'],
+   answer:'A',
+   exp:`admit the fact 表示"承认事实"；accept 多指接受某物/观点，不与 fact 直接搭配表示"承认错误"。`},
+  {id:26, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`We should ______ our parents for offering us a comfortable life.`,
+   options:['give up','put up','look for','be thankful to'],
+   answer:'D',
+   exp:`be thankful to sb. for sth. 表示"因某事感谢某人"，符合句意。`},
+  {id:27, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`He is so ______ that he often helps others without asking for anything in return.`,
+   options:'greedy,generous,nervous,careful'.split(','),
+   answer:'B',
+   exp:`generous 慷慨的；句意为"他经常不求回报地帮助别人"，故选 generous。`},
+  {id:28, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`She was not allowed to use the car ______ she had passed the driving test.`,
+   options:['because','until','if','when'],
+   answer:'B',
+   exp:`not...until... 是固定句型，表示"直到……才……"，句意为"直到通过驾考她才被允许用车"。`},
+  {id:29, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The problem is too difficult for us to solve. We need more people to help ______ it.`,
+   options:['work out','take off','put on','give up'],
+   answer:'A',
+   exp:`work out 解决；take off 起飞/脱下；put on 穿上；give up 放弃。解决问题用 work out。`},
+  {id:30, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`If I ______ you, I would take this opportunity to study abroad.`,
+   options:['am','was','were','be'],
+   answer:'C',
+   exp:`虚拟语气：与现在事实相反的 if 从句用一般过去时，be 动词一律用 were。`},
+  {id:31, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The teacher told us that the earth ______ around the sun.`,
+   options:['moved','moves','is moving','was moving'],
+   answer:'B',
+   exp:`宾语从句中若表示客观真理，无论主句时态如何，从句都用一般现在时。`},
+  {id:32, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The book is worth ______. I plan to read it again.`,
+   options:['read','to read','reading','being read'],
+   answer:'C',
+   exp:`be worth doing 是固定搭配，主动形式表被动含义，意为"值得被做"。`},
+  {id:33, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`______ the help of the police, we found the lost child at last.`,
+   options:['Under','With','For','By'],
+   answer:'B',
+   exp:`with the help of... 固定搭配，表示"在……的帮助下"。`},
+  {id:34, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`I can't find my keys. I remember ______ them on the table this morning.`,
+   options:['putting','to put','put','puts'],
+   answer:'A',
+   exp:`remember doing sth. 表示"记得做过某事"；remember to do sth. 表示"记得去做某事"。根据句意钥匙已放在桌上，用 doing。`},
+  {id:35, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`This is the best film ______ I have ever seen.`,
+   options:['which','that','what','who'],
+   answer:'B',
+   exp:`定语从句中，先行词被最高级 the best 修饰时，关系代词只能用 that。`},
+  {id:36, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The meeting ______ when I got to the office yesterday.`,
+   options:['began','had begun','begins','has begun'],
+   answer:'B',
+   exp:`"会议开始"发生在"我到达办公室"之前，是"过去的过去"，用过去完成时。`},
+  {id:37, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`______ he is young, he knows a lot about computer science.`,
+   options:['Because','Although','If','When'],
+   answer:'B',
+   exp:`although 引导让步状语从句，表示"尽管"。句意为"尽管他很年轻，但他懂很多计算机知识"。`},
+  {id:38, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`All the students in our class are looking forward to ______ the summer holiday.`,
+   options:['spend','spending','spent','be spent'],
+   answer:'B',
+   exp:`look forward to 中的 to 是介词，后接 doing。`},
+  {id:39, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`He didn't go to school yesterday ______ his illness.`,
+   options:['because','because of','since','as'],
+   answer:'B',
+   exp:`because of + 名词/名词短语；because/since/as + 从句。his illness 是名词短语，故用 because of。`},
+  {id:40, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The manager asked us ______ we needed any help with the project.`,
+   options:['what','whether','which','whose'],
+   answer:'B',
+   exp:`whether 引导宾语从句，表示"是否"。句意为"经理问我们是否需要项目上的帮助"。`},
+  {id:41, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`I haven't seen him ______ we left school three years ago.`,
+   options:['since','for','after','before'],
+   answer:'A',
+   exp:`since + 过去时间点/从句，常与现在完成时连用。"we left school three years ago" 是从句，用 since。`},
+  {id:42, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The film ______ for ten minutes when I arrived at the cinema.`,
+   options:['has begun','had begun','has been on','had been on'],
+   answer:'D',
+   exp:`"for ten minutes" 是时间段，需用延续性动词；begin 是瞬间动词，可用 be on 替代。arrived 是过去时，电影开始发生在其之前，用过去完成进行时/状态 had been on。`},
+  {id:43, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`______ interesting story it is!`,
+   options:['What a','What an','How','How an'],
+   answer:'B',
+   exp:`感叹句结构：What + a/an + 形容词 + 可数名词单数 + 主语 + 谓语！interesting 以元音音素开头，用 an。`},
+  {id:44, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`Neither Tom nor his parents ______ going to attend the party tonight.`,
+   options:['is','are','was','be'],
+   answer:'B',
+   exp:`neither...nor... 遵循就近原则，谓语与最近的主语 his parents 一致，用 are。`},
+  {id:45, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`You'd better ______ too much time playing computer games.`,
+   options:['not to spend','not spend','don\'t spend','to not spend'],
+   answer:'B',
+   exp:`had better (not) do sth. 是固定用法，后接动词原形。`},
+  {id:46, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The old man lives ______, but he doesn't feel ______.`,
+   options:['alone; lonely','lonely; alone','alone; alone','lonely; lonely'],
+   answer:'A',
+   exp:`alone 作副词表示"独自地"；lonely 是形容词表示"孤独的"。第一空修饰 lives 用 alone，第二空 feel 后接 lonely。`},
+  {id:47, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`I was about to leave ______ it began to rain heavily.`,
+   options:['while','when','as','since'],
+   answer:'B',
+   exp:`be about to do... when... 是固定句型，表示"正要做某事，这时突然……"。`},
+  {id:48, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`The number of the students in our school ______ increasing year by year.`,
+   options:['is','are','were','be'],
+   answer:'A',
+   exp:`the number of + 复数名词 表示"……的数量"，谓语用单数。a number of 才用复数。`},
+  {id:49, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`______ you study harder, you will not pass the final exam.`,
+   options:['If','Unless','Because','Although'],
+   answer:'B',
+   exp:`unless = if not，表示"除非"。句意为"除非你更努力，否则不会通过期末考试"。`},
+  {id:50, section:'II', type:'mcq', title:'词汇与结构', score:1,
+   question:`He speaks English ______ a native speaker.`,
+   options:['as good as','as better as','as well as','as best as'],
+   answer:'C',
+   exp:`as...as... 中间用原级；修饰动词 speaks 用副词 well，不能用形容词 good。`},
+
+  // ===== Part III 完形填空 (10) =====
+  {id:51, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and __(51)__ for more than 6,000 kilometers. The wall was first built to protect the country __(52)__ enemies. __(53)__ it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is __(54)__ a symbol of China and a great achievement of __(55)__ civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`51. `, options:['runs','walks','lies','stands'], answer:'A', exp:`run 可表示道路、河流、城墙等"延伸、绵延"，主语 it 为第三人称单数，用 runs。`},
+  {id:52, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country __(52)__ enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is __(54)__ a symbol of China and a great achievement of __(55)__ civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`52. `, options:['with','from','for','to'], answer:'B', exp:`protect...from... 固定搭配，表示"保护……免受……"。`},
+  {id:53, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. __(53)__ it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is __(54)__ a symbol of China and a great achievement of __(55)__ civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`53. `, options:['Because','Although','If','Unless'], answer:'B', exp:`前后句是让步关系：虽然不再用于军事，但已成为著名景点，用 Although。`},
+  {id:54, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is __(54)__ a symbol of China and a great achievement of __(55)__ civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`54. `, options:['neither','both','either','not only'], answer:'D', exp:`not only...but also... 是固定搭配，下文有 and a great achievement，用 not only 与后面的 and 形成递进。`},
+  {id:55, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of __(55)__ civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`55. `, options:['human','man','people','person'], answer:'A', exp:`human civilization 人类文明；man's 也说得通但现代英语更常用 human civilization。`},
+  {id:56, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of human civilization. It was listed as a World Heritage Site by UNESCO in 1987. __(56)__ the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`56. `, options:['Over','During','For','Since'], answer:'A', exp:`over the years 表示"这些年来"，常与现在完成时连用。`},
+  {id:57, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of human civilization. It was listed as a World Heritage Site by UNESCO in 1987. Over the years, many parts of the wall have been repaired. __(57)__, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`57. `, options:['Therefore','However','Besides','Otherwise'], answer:'B', exp:`前文说已修复，后文说仍有部分状况差，是转折关系，用 However。`},
+  {id:58, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of human civilization. It was listed as a World Heritage Site by UNESCO in 1987. Over the years, many parts of the wall have been repaired. However, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. __(58)__ we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`58. `, options:['Which','That','What','How'], answer:'C', exp:`What we can do 是主语从句，what 在从句中作 do 的宾语，表示"我们能做的事情"。`},
+  {id:59, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of human civilization. It was listed as a World Heritage Site by UNESCO in 1987. Over the years, many parts of the wall have been repaired. However, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. What we can do is to raise public awareness and avoid __(59)__ any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`59. `, options:['to make','make','making','made'], answer:'C', exp:`avoid 后接 doing，avoid making any damage 避免造成任何破坏。`},
+  {id:60, section:'III', type:'cloze', title:'完形填空', score:1,
+   passage:`The Great Wall of China is one of the greatest wonders of the world. It was built over 2,000 years ago and runs for more than 6,000 kilometers. The wall was first built to protect the country from enemies. Although it is no longer used for military purposes, it has become one of the most famous tourist attractions in the world. Every year, millions of people from all over the world come to visit it. Standing on the wall, visitors can enjoy the beautiful scenery and learn about Chinese history and culture. The Great Wall is not only a symbol of China and a great achievement of human civilization. It was listed as a World Heritage Site by UNESCO in 1987. Over the years, many parts of the wall have been repaired. However, some sections are still in poor condition and need more protection. The Chinese government has taken many measures to preserve this treasure. What we can do is to raise public awareness and avoid making any damage to it. Only in this way can the Great Wall continue to stand __(60)__ for future generations.`,
+   question:`60. `, options:['strong','strongly','strength','stronger'], answer:'A',
+   exp:`stand 是系动词，后接形容词作表语，stand strong 表示"屹立不倒"。`},
+
+  // ===== Part IV 阅读理解 (15) =====
+  // Passage 1 (61-65)
+  {id:61, section:'IV', type:'reading', title:'阅读 · Passage 1', score:3,
+   passage:`Paper was first invented in China around 2,000 years ago. Before paper was invented, people wrote on bamboo slips, silk, or animal bones. These materials were either too heavy or too expensive. Cai Lun, a Han Dynasty official, improved the papermaking process by using plant fibers. This made paper cheaper and easier to produce. Soon, paper became widely used in China and later spread to other parts of the world through the Silk Road. Today, paper is still an important material in daily life, although digital technology has reduced its use in some areas.`,
+   question:`What problem did early writing materials have?`,
+   options:['They were too soft.','They were too heavy or too expensive.','They were difficult to find.','They could not be reused.'],
+   answer:'B',
+   exp:`原文 "These materials were either too heavy or too expensive" 直接给出答案。`},
+  {id:62, section:'IV', type:'reading', title:'阅读 · Passage 1', score:3,
+   passage:`(同上文)`,
+   question:`Who improved the papermaking process?`,
+   options:['Marco Polo','Cai Lun','Confucius','Zheng He'],
+   answer:'B',
+   exp:`原文 "Cai Lun, a Han Dynasty official, improved the papermaking process"。`},
+  {id:63, section:'IV', type:'reading', title:'阅读 · Passage 1', score:3,
+   passage:`(同上文)`,
+   question:`What did Cai Lun use to make paper?`,
+   options:['Bamboo and silk','Animal bones','Plant fibers','Metal and glass'],
+   answer:'C',
+   exp:`原文 "by using plant fibers"。`},
+  {id:64, section:'IV', type:'reading', title:'阅读 · Passage 1', score:3,
+   passage:`(同上文)`,
+   question:`How did paper spread to other parts of the world?`,
+   options:['By sea trade','Through the Silk Road','By war','By modern airlines'],
+   answer:'B',
+   exp:`原文 "spread to other parts of the world through the Silk Road"。`},
+  {id:65, section:'IV', type:'reading', title:'阅读 · Passage 1', score:3,
+   passage:`(同上文)`,
+   question:`What can we learn from the passage?`,
+   options:['Paper is no longer used today.','Paper was invented in Europe.','Paper was first made in China.','Cai Lun invented paper.'],
+   answer:'C',
+   exp:`A 与原文 "paper is still an important material" 矛盾；B 与首句矛盾；D 错，Cai Lun 是改进而非发明；C 与首句一致。`},
+
+  // Passage 2 (66-70)
+  {id:66, section:'IV', type:'reading', title:'阅读 · Passage 2', score:3,
+   passage:`Regular physical activity is one of the most important things you can do for your health. It helps control weight, reduces the risk of heart disease, and strengthens muscles and bones. Experts recommend at least 150 minutes of moderate exercise per week. This can include walking, swimming, cycling, or dancing. You don't need to do all the exercise at once. Even short periods of activity, such as taking the stairs instead of the elevator, can make a difference. The key is to find an activity you enjoy so that you will stick with it.`,
+   question:`According to the passage, what is one benefit of regular exercise?`,
+   options:['It improves eyesight.','It reduces the risk of heart disease.','It increases stress.','It causes weight gain.'],
+   answer:'B',
+   exp:`原文 "reduces the risk of heart disease" 对应 B。`},
+  {id:67, section:'IV', type:'reading', title:'阅读 · Passage 2', score:3,
+   passage:`(同上文)`,
+   question:`How much exercise do experts recommend per week?`,
+   options:['30 minutes','60 minutes','150 minutes','300 minutes'],
+   answer:'C',
+   exp:`原文 "at least 150 minutes of moderate exercise per week"。`},
+  {id:68, section:'IV', type:'reading', title:'阅读 · Passage 2', score:3,
+   passage:`(同上文)`,
+   question:`Which activity is NOT mentioned in the passage?`,
+   options:['Walking','Swimming','Running','Dancing'],
+   answer:'C',
+   exp:`原文提到 walking, swimming, cycling, dancing，没有 running。`},
+  {id:69, section:'IV', type:'reading', title:'阅读 · Passage 2', score:3,
+   passage:`(同上文)`,
+   question:`What does the author suggest about exercise time?`,
+   options:['It must be done all at once.','Short periods of activity are useless.','It can be done in short periods.','Only morning exercise works.'],
+   answer:'C',
+   exp:`原文 "You don't need to do all the exercise at once. Even short periods of activity...can make a difference."`},
+  {id:70, section:'IV', type:'reading', title:'阅读 · Passage 2', score:3,
+   passage:`(同上文)`,
+   question:`What is the main idea of the passage?`,
+   options:['Exercise is good for health and can be done in various ways.','Exercise should be difficult and tiring.','Only athletes need exercise.','Exercise is bad for bones.'],
+   answer:'A',
+   exp:`全文主旨：运动有益健康，形式多样，不必一次性完成。`},
+
+  // Passage 3 (71-75)
+  {id:71, section:'IV', type:'reading', title:'阅读 · Passage 3', score:3,
+   passage:`Online learning has become increasingly popular in recent years. It allows students to study at their own pace and from any location. However, online learning also has challenges. Students need strong self-discipline because there are no teachers watching them directly. They also need a reliable internet connection and basic computer skills. Despite these challenges, many people believe that online learning will continue to grow and play an important role in education in the future.`,
+   question:`What is one advantage of online learning mentioned in the passage?`,
+   options:['It is always free.','Students can study at their own pace.','It requires no internet.','Teachers watch students all the time.'],
+   answer:'B',
+   exp:`原文 "allows students to study at their own pace" 对应 B。`},
+  {id:72, section:'IV', type:'reading', title:'阅读 · Passage 3', score:3,
+   passage:`(同上文)`,
+   question:`What challenge of online learning is mentioned?`,
+   options:['Students need self-discipline.','There are too many teachers.','Classes are always too long.','Students cannot ask questions.'],
+   answer:'A',
+   exp:`原文 "Students need strong self-discipline" 对应 A。`},
+  {id:73, section:'IV', type:'reading', title:'阅读 · Passage 3', score:3,
+   passage:`(同上文)`,
+   question:`What do students need for online learning?`,
+   options:['A large classroom','A reliable internet connection','A private tutor','A library card'],
+   answer:'B',
+   exp:`原文 "need a reliable internet connection and basic computer skills" 对应 B。`},
+  {id:74, section:'IV', type:'reading', title:'阅读 · Passage 3', score:3,
+   passage:`(同上文)`,
+   question:`What does the author think about the future of online learning?`,
+   options:['It will disappear soon.','It will become less popular.','It will continue to grow.','It will replace all schools.'],
+   answer:'C',
+   exp:`原文 "online learning will continue to grow and play an important role in education in the future" 对应 C。`},
+  {id:75, section:'IV', type:'reading', title:'阅读 · Passage 3', score:3,
+   passage:`(同上文)`,
+   question:`What is the author's attitude toward online learning?`,
+   options:['Completely negative','Only positive','Balanced, mentioning both advantages and challenges','Uninterested'],
+   answer:'C',
+   exp:`作者既讲了优势（自主、地点灵活），也讲了挑战（自律、网络、电脑技能），态度客观平衡。`},
+
+  // ===== Part V 翻译 (76) =====
+  {id:76, section:'V', type:'textarea', title:'段落翻译（汉译英）', score:20,
+   question:`请将下面这段中文翻译成英文。\n\n中国是一个历史悠久的国家，拥有丰富的文化遗产。近年来，随着经济的快速发展，越来越多的外国人开始学习中文，并希望了解中国的传统文化。中国政府也在积极采取措施保护这些珍贵的文化遗产，使它们能够被后代继承和欣赏。`,
+   answer:`China is a country with a long history and rich cultural heritage. In recent years, with the rapid development of the economy, more and more foreigners have begun to learn Chinese and hope to understand traditional Chinese culture. The Chinese government is also taking active measures to protect these precious cultural heritages so that they can be inherited and appreciated by future generations.`,
+   exp:`翻译要点：\n1. "历史悠久的" 译为 with a long history 或 time-honored；\n2. "文化遗产" cultural heritage（不可数，泛指）；\n3. "随着经济的快速发展" with the rapid development of the economy；\n4. "越来越多的" more and more；\n5. "采取措施" take measures；\n6. "被后代继承和欣赏" be inherited and appreciated by future generations。`},
+
+  // ===== Part VI 写作 (77) =====
+  {id:77, section:'VI', type:'textarea', title:'短文写作', score:25,
+   question:`请根据以下要求写一篇不少于 120 词的英语短文。\n\n题目：The Importance of Lifelong Learning\n要点：\n1. 终身学习在当今社会为什么重要；\n2. 你可以通过哪些方式进行终身学习；\n3. 你的看法或计划。`,
+   answer:`The Importance of Lifelong Learning\n\nIn today's fast-changing society, lifelong learning has become more important than ever. New technologies and ideas are constantly emerging, and what we learned in school may quickly become outdated. Therefore, keeping on learning is essential for both personal growth and career development.\n\nThere are many ways to practice lifelong learning. First, we can read books and news regularly to stay informed. Second, online courses allow us to learn new skills at our own pace. Third, communicating with people from different backgrounds can also broaden our horizons.\n\nIn my opinion, lifelong learning is not a burden but a valuable habit. I plan to spend at least one hour every day reading or learning something new. I believe that as long as we keep an open mind, we will make progress throughout our lives.`,
+   exp:`写作要点：\n1. 结构清晰：引言说明终身学习重要性，主体段列举学习方式，结尾段表达个人观点；\n2. 字数超过 120 词；\n3. 使用连接词 First, Second, Third, Therefore, In my opinion 使文章连贯；\n4. 语法正确，表达准确；\n5. 内容切题，涵盖题目三个要点。`}
+];
+} catch (e) { console.error('question init error', e); }
+
+// ===== 中文翻译数据（供"翻译"按钮使用）=====
+const zhMap = {
+  1: { audio: '世界卫生组织最新报告称，成年人每日糖摄入量应减少到总热量的10%以下；若降至5%以下，将带来额外健康益处。', q: '根据报告，成年人每日糖摄入量的建议是多少？', opts: ['少于总热量的5%','少于总热量的10%','约15%','不超过20%'] },
+  2: { audio: '上海有关部门宣布，自下月起，市中心所有新建住宅楼必须配备电动汽车充电设施，以推广绿色出行、减少空气污染。', q: '市中心新建住宅楼将被要求配备什么？', opts: ['太阳能发电系统','电动汽车充电设施','公共自行车站','废物回收中心'] },
+  3: { audio: '一项新研究表明，每天步行至少8000步的人患心脏病风险明显更低；跟踪上万名成年人五年后发现，坚持步行比速度更重要。', q: '关于步行的研究发现了什么？', opts: ['速度最重要','每天8000步可降低心脏病风险','只有年轻人受益','步行不如跑步有效'] },
+  4: { audio: '市图书馆将从本周五起，周末闭馆时间延长至午夜，以满足学生和上班族晚间学习日益增长的需求。', q: '图书馆为何延长周末开放时间？', opts: ['招聘更多员工','满足晚间学习需求','举办周末活动','降低电费'] },
+  5: { audio: '地方官员确认，建设历时三年的新地铁线路将于12月1日通车，可在40分钟内连接机场与市中心。', q: '新地铁线路何时开通？', opts: ['11月1日','12月1日','1月1日','2月1日'] },
+  6: { audio: '男：打扰一下，下一班去杭州的火车几点发车？女：3:30。但票都卖光了，你可以试试坐大巴。', q: '女士建议男士怎么做？', opts: ['等下一班火车','稍后再买票','坐大巴','更改目的地'] },
+  7: { audio: '女：听说你升职了，恭喜！男：谢谢，我很感激，但新岗位意味着责任更重、工作时间更长。', q: '男士对升职可能是什么感受？', opts: ['自豪但担忧','愤怒且失望','完全放松','不感兴趣'] },
+  8: { audio: '男：你看完报告了吗？女：还没有，我只看了前两章，还有五章没看。', q: '报告总共有多少章？', opts: ['两章','五章','七章','九章'] },
+  9: { audio: '女：我想退这件衬衫，尺码不对。男：没问题，您带收据了吗？', q: '对话最可能发生在哪里？', opts: ['餐厅','服装店','银行','图书馆'] },
+  10: { audio: '男：你下午来开会吗？女：我希望能去，但我得在5点前写完一份报告。', q: '女士的话是什么意思？', opts: ['她会参加会议','她不能参加会议','她会先开完会','她会在会上交报告'] },
+  11: { audio: '许多人发现睡前使用电子设备后很难入睡。这是因为屏幕蓝光会减少褪黑素分泌，而褪黑素是帮助控制睡眠的激素。专家建议至少睡前一小时收起手机和平板。', q: '为什么睡前使用电子设备后难以入睡？', opts: ['设备太吵','蓝光减少褪黑素','内容太精彩','房间变亮'] },
+  12: { audio: '', q: '褪黑素有什么作用？', opts: ['改善视力','控制睡眠','减轻压力','增加精力'] },
+  13: { audio: '', q: '专家建议怎么做？', opts: ['使用设备到午夜','把设备放在卧室','睡前一小时收起设备','多吃药'] },
+  14: { audio: '', q: '文中提到哪种光是有问题的？', opts: ['红光','黄光','蓝光','绿光'] },
+  15: { audio: '', q: '这篇文章的主旨是什么？', opts: ['如何选择电子设备','屏幕光线对睡眠的影响','减少夜间噪音的方法','运动的重要性'] },
+  16: { audio: '汤姆一直想学做饭。上个月他报名参加了周末烹饪班。起初他觉得很难照着菜谱做，但每个周末练习后，他现在能做几道中国菜了。家人都为他感到骄傲。', q: '汤姆上个月做了什么？', opts: ['开了一家餐馆','报名烹饪班','买了新厨房','写了一本菜谱'] },
+  17: { audio: '', q: '汤姆起初觉得做饭怎么样？', opts: ['很容易','很难','很无聊','很贵'] },
+  18: { audio: '', q: '汤姆多久练习做一次饭？', opts: ['每天','每个周末','每月一次','从不'] },
+  19: { audio: '', q: '汤姆现在能做什么菜？', opts: ['法国菜','日本菜','中国菜','意大利菜'] },
+  20: { audio: '', q: '汤姆的家人对他感觉如何？', opts: ['担心','骄傲','生气','惊讶'] },
+  21: { q: '长途旅行后她太累了，几乎无法______眼睛睁着。', opts: ['得到','保持','握住','使得'] },
+  22: { q: '约翰的父亲因心脏不好不得不退休，有时他______得无法呼吸。', opts: ['粗心的','喘不过气的','绝望的','无家可归的'] },
+  23: { q: '经过长时间讨论，他们终于______了一项协议。', opts: ['制定','拿走','达成','携带'] },
+  24: { q: '______孩子们学会年长者应当被照顾，这很重要。', opts: ['对于','（指人）','和','关于'] },
+  25: { q: '他拒绝______自己在报告中犯了错误这一事实。', opts: ['承认','避免','允许','接受'] },
+  26: { q: '我们应当______父母为我们提供舒适的生活。', opts: ['放弃','忍受','寻找','对…心存感激'] },
+  27: { q: '他是如此______，常常不求回报地帮助别人。', opts: ['贪婪的','慷慨的','紧张的','小心的'] },
+  28: { q: '在她______通过驾驶考试之前，她不被允许使用这辆车。', opts: ['因为','直到','如果','当'] },
+  29: { q: '这个问题太难，我们解决不了，需要更多人帮忙______它。', opts: ['解决','起飞','穿上','放弃'] },
+  30: { q: '如果我是你，我会抓住这个出国留学的机会。', opts: ['am','was','were','be'] },
+  31: { q: '老师告诉我们地球______围绕太阳转。', opts: ['moved','moves','正在移动','was moving'] },
+  32: { q: '这本书值得______。我打算再读一遍。', opts: ['读（原形）','去读','读（动名词）','被读'] },
+  33: { q: '______警察的帮助，我们终于找到了走失的孩子。', opts: ['在…下','在…的帮助下','为了','通过'] },
+  34: { q: '我找不到钥匙了，记得今天早上把它们______桌子上了。', opts: ['放（动名词）','去放','放（原形）','放（三单）'] },
+  35: { q: '这是我曾经看过的______电影。', opts: ['which','that','什么','who'] },
+  36: { q: '昨天我到办公室时，会议已经______。', opts: ['开始','已经开始','开始（三单）','已开（现完）'] },
+  37: { q: '______他还年轻，他却懂很多计算机科学知识。', opts: ['因为','尽管','如果','当'] },
+  38: { q: '我们班所有同学都盼望着______暑假。', opts: ['度过','度过（动名词）','度过（过去式）','被度过'] },
+  39: { q: '他昨天没去上学______生病。', opts: ['因为','因为（短语）','既然','由于'] },
+  40: { q: '经理问我们______在项目上需要帮助。', opts: ['什么','是否','哪个','谁的'] },
+  41: { q: '______我们三年前毕业离校，我就再没见过他。', opts: ['自从','为了','在…之后','在…之前'] },
+  42: { q: '我到电影院时，电影已经______十分钟了。', opts: ['已开（现完）','已开（过完）','已上映（现完）','已上映（过完）'] },
+  43: { q: '______有趣的故事啊！', opts: ['What a','What an','How','How an'] },
+  44: { q: '汤姆和他的父母都不______参加今晚的聚会。', opts: ['is','are','was','be'] },
+  45: { q: '你最好______太多时间玩电脑游戏。', opts: ['不要花','不要花（原形）','别花','不要去花'] },
+  46: { q: '老人______住，但他不觉得______。', opts: ['独自（副词）','孤独；独自','独自；独自','孤独；孤独'] },
+  47: { q: '我正要离开______下起了大雨。', opts: ['当…时（同时）','这时（突然）','因为','自从'] },
+  48: { q: '我们学校学生的数量______逐年增加。', opts: ['is','are','were','be'] },
+  49: { q: '______你更努力学习，你将不能通过期末考试。', opts: ['如果','除非','因为','尽管'] },
+  50: { q: '他说英语______以英语为母语的人。', opts: ['和…一样好（形）','和…一样更好','和…一样好（副）','和…一样最好'] },
+  51: { passage: '中国的长城是世界最伟大的奇迹之一。它建于2000多年前，绵延6000多公里。长城最初修建是为了保护国家免受敌人侵犯。尽管它不再用于军事目的，但已成为世界最著名的旅游景点之一。每年，来自世界各地的数百万人前来参观。站在城墙上，游客可以欣赏美丽的风景，了解中国的历史与文化。长城不仅是中国的一个象征，也是人类文明的伟大成就。1987年，它被联合国教科文组织列为世界遗产。多年来，长城的许多部分已被修复。然而，有些段落的状况仍然很差，需要更多保护。中国政府已采取许多措施来保护这一珍宝。我们能做的是提高公众意识，避免对它造成任何破坏。只有这样，长城才能继续坚固地屹立，留给子孙后代。',
+       q: '它建于2000多年前，______（绵延）6000多公里。', opts: ['延伸','步行','位于','矗立'] },
+  52: { q: '长城最初修建是为了保护国家______敌人。', opts: ['和','免受','为了','向'] },
+  53: { q: '______它不再用于军事目的，它已成为最著名的旅游景点之一。', opts: ['因为','尽管','如果','除非'] },
+  54: { q: '长城______是中国的象征，也是人类文明的伟大成就。', opts: ['既不','不仅','要么','也不'] },
+  55: { q: '……人类______文明的伟大成就。', opts: ['人类的','男人的','人民的','个人的'] },
+  56: { q: '______这些年，长城的许多部分已被修复。', opts: ['在…期间','多年来','为了','自从'] },
+  57: { q: '______，有些段落状况仍然很差。', opts: ['因此','然而','此外','否则'] },
+  58: { q: '______我们能做的是提高公众意识。', opts: ['哪个','什么','我们所做的','如何'] },
+  59: { q: '……避免______任何破坏。', opts: ['去造成','造成','造成（动名词）','造成（过去式）'] },
+  60: { q: '……继续______地屹立。', opts: ['强壮的','强壮地','力量','更强壮的'] },
+  61: { passage: '纸最早约在2000年前发明于中国。在纸发明之前，人们写在竹简、丝绸或兽骨上，这些材料要么太重，要么太贵。东汉官员蔡伦利用植物纤维改进了造纸工艺，使纸张更便宜、更易生产。不久，纸在中国广泛使用，后来通过丝绸之路传播到世界其他地区。如今，尽管数字技术减少了纸张在某些领域的使用，但纸仍是日常生活中重要的材料。',
+       q: '早期的书写材料存在什么问题？', opts: ['太软','太重或太贵','难以找到','无法重复使用'] },
+  62: { q: '谁改进了造纸工艺？', opts: ['马可·波罗','蔡伦','孔子','郑和'] },
+  63: { q: '蔡伦用什么造纸？', opts: ['竹子和丝绸','兽骨','植物纤维','金属和玻璃'] },
+  64: { q: '纸是如何传播到世界其他地区的？', opts: ['海上贸易','通过丝绸之路','通过战争','通过现代航空'] },
+  65: { q: '从这篇文章中我们能学到什么？', opts: ['纸如今不再使用','纸发明于欧洲','纸最早制造于中国','蔡伦发明了纸'] },
+  66: { passage: '规律的身体活动是对健康最重要的事情之一。它有助于控制体重、降低心脏病风险，并增强肌肉和骨骼。专家建议每周至少进行150分钟中等强度运动，可包括步行、游泳、骑自行车或跳舞。你不必一次性完成所有运动，即使是走楼梯而不是乘电梯这样的短暂活动也能起作用。关键是找到一项你喜欢的活动，这样你才能坚持下去。',
+       q: '根据文章，规律运动的一个好处是什么？', opts: ['改善视力','降低心脏病风险','增加压力','导致体重增加'] },
+  67: { q: '专家建议每周运动多久？', opts: ['30分钟','60分钟','150分钟','300分钟'] },
+  68: { q: '文中没有提到哪项活动？', opts: ['步行','游泳','跑步','跳舞'] },
+  69: { q: '作者关于运动时间有什么建议？', opts: ['必须一次性完成','短暂活动没用','可以分短时段进行','只有晨练有效'] },
+  70: { q: '这篇文章的主旨是什么？', opts: ['运动有益健康且方式多样','运动应艰难疲劳','只有运动员需要运动','运动对骨骼有害'] },
+  71: { passage: '近年来，在线学习变得越来越流行，它让学生可以按照自己的节奏、在任何地点学习。然而，在线学习也有挑战：学生需要很强的自律，因为没有老师直接监督；他们还需要可靠的网络连接和基本计算机技能。尽管有这些挑战，许多人相信在线学习将继续发展，并在未来的教育中扮演重要角色。',
+       q: '文中提到的在线学习的一个优势是什么？', opts: ['它总是免费','学生能按自己的节奏学习','它不需要网络','老师一直监督学生'] },
+  72: { q: '文中提到了在线学习的什么挑战？', opts: ['学生需要自律','老师太多','课程总是太长','学生不能提问'] },
+  73: { q: '学生进行在线学习需要什么？', opts: ['大教室','可靠的网络连接','私人导师','借书证'] },
+  74: { q: '作者如何看待在线学习的未来？', opts: ['它将很快消失','它将变得不那么流行','它将继续发展','它将取代所有学校'] },
+  75: { q: '作者对在线学习的态度是什么？', opts: ['完全负面','只正面','客观平衡，既提优势也提挑战','不感兴趣'] }
+};
+
+function saveState() {
+  try {
+    const data = { current, answers, timeLeft, startedAt, submitted, explanationShown, translationShown, explanationWrong };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch (e) {
+    // localStorage 在部分浏览器以 file:// 打开时会抛 SecurityError，忽略即可（仅丢失自动保存）
+  }
+}
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    if (data.answers) answers = data.answers;
+    if (data.timeLeft > 0) timeLeft = data.timeLeft;
+    if (data.current >= 0) current = data.current;
+    if (data.startedAt) startedAt = data.startedAt;
+    if (data.submitted) submitted = data.submitted;
+    if (data.explanationShown) explanationShown = data.explanationShown;
+    if (data.translationShown) translationShown = data.translationShown;
+    if (data.explanationWrong) explanationWrong = data.explanationWrong;
+    return true;
+  } catch (e) { return false; }
+}
+function clearState() {
+  localStorage.removeItem(STORAGE_KEY);
+}
+
+function startExam(resume) {
+  document.getElementById('startScreen').classList.add('hidden');
+  document.getElementById('examScreen').classList.remove('hidden');
+  document.getElementById('progressWrap').classList.remove('hidden');
+  const had = loadState();
+  if (!resume || !had) {
+    answers = {}; explanationShown = {}; translationShown = {}; explanationWrong = {}; current = 0; timeLeft = EXAM_DURATION; submitted = false; startedAt = Date.now();
+  } else {
+    if (submitted) { showResults(); return; }
+    if (!startedAt) startedAt = Date.now();
+  }
+  startTimer();
+  renderQuestion();
+  renderNavigator();
+  saveState();
+}
+
+function startTimer() {
+  if (timerId) clearInterval(timerId);
+  updateTimerDisplay();
+  timerId = setInterval(() => {
+    timeLeft--;
+    updateTimerDisplay();
+    saveState();
+    if (timeLeft <= 0) { clearInterval(timerId); submitExam(true); }
+  }, 1000);
+}
+function updateTimerDisplay() {
+  const h = String(Math.floor(timeLeft / 3600)).padStart(2, '0');
+  const m = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  const el = document.getElementById('timer');
+  el.textContent = `${h}:${m}:${s}`;
+  el.classList.remove('warn', 'danger');
+  if (timeLeft < 600) el.classList.add('danger');
+  else if (timeLeft < 1800) el.classList.add('warn');
+  document.getElementById('statusText').textContent = submitted ? '已交卷' : '考试中';
+}
+
+function getCurrentQuestion() { return questions[current]; }
+function getSectionName(sec) {
+  const map = {I:'听力理解', II:'词汇与结构', III:'完形填空', IV:'阅读理解', V:'段落翻译', VI:'短文写作'};
+  return map[sec] || sec;
+}
+
+function renderQuestion() {
+  const q = getCurrentQuestion();
+  document.getElementById('qMeta').textContent = `第 ${current+1} / ${questions.length} 题 · ${getSectionName(q.section)}`;
+  document.getElementById('qScore').textContent = `${q.score} 分`;
+  const body = document.getElementById('qBody');
+  const opts = document.getElementById('qOptions');
+  const ttsBtn = document.getElementById('ttsBtn');
+  opts.innerHTML = '';
+
+  let html = '';
+  if (q.type === 'listening') {
+    html += `<div class="mb-3 p-3 bg-indigo-50 rounded-lg text-sm text-indigo-900"><span class="font-semibold">听力原文：</span><span id="audioText">${escapeHtml(q.audio || '').replace(/\n/g,'<br>')}</span></div>`;
+    ttsBtn.classList.remove('hidden');
+  } else {
+    ttsBtn.classList.add('hidden');
+  }
+  if (q.passage) {
+    html += `<div class="mb-4 p-3 bg-gray-50 rounded-lg text-sm leading-relaxed border border-gray-100">${escapeHtml(q.passage).replace(/\n/g,'<br>')}</div>`;
+  }
+  html += `<div class="text-base font-medium leading-relaxed">${escapeHtml(q.question).replace(/\n/g,'<br>')}</div>`;
+  body.innerHTML = html;
+
+  if (q.type === 'textarea') {
+    const ta = document.createElement('textarea');
+    ta.className = 'w-full h-48 p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-base leading-relaxed';
+    ta.placeholder = '请输入你的答案……';
+    ta.value = answers[q.id] || '';
+    ta.oninput = () => { answers[q.id] = ta.value.trim(); renderNavigator(); saveState(); };
+    opts.appendChild(ta);
+  } else {
+    q.options.forEach((opt, idx) => {
+      const letter = ['A','B','C','D'][idx];
+      const btn = document.createElement('div');
+      btn.className = `option border rounded-lg p-3 cursor-pointer flex items-start gap-3 ${answers[q.id] === letter ? 'selected' : ''}`;
+      btn.innerHTML = `<span class="font-bold text-gray-500 w-6 text-center">${letter}</span><span class="text-sm leading-relaxed flex-1">${escapeHtml(opt)}</span>`;
+      btn.onclick = () => { selectOption(letter); };
+      opts.appendChild(btn);
+    });
+  }
+
+  const expBox = document.getElementById('expBox');
+  const expText = document.getElementById('expText');
+  const expTitle = document.getElementById('expTitle');
+  if (explanationShown[q.id]) {
+    expBox.classList.remove('hidden');
+    expText.innerHTML = formatExplanation(q);
+    if (explanationWrong[q.id]) {
+      expTitle.textContent = '❌ 为什么做错';
+      expBox.classList.remove('border-green-500', 'bg-green-50');
+      expBox.classList.add('border-red-500', 'bg-red-50');
+      expTitle.classList.remove('text-green-800');
+      expTitle.classList.add('text-red-800');
+    } else {
+      expTitle.textContent = '解析';
+      expBox.classList.remove('border-red-500', 'bg-red-50');
+      expBox.classList.add('border-green-500', 'bg-green-50');
+      expTitle.classList.remove('text-red-800');
+      expTitle.classList.add('text-green-800');
+    }
+  } else {
+    expBox.classList.add('hidden');
+  }
+
+  // 中文翻译框：把听力原文/篇章/题干/选项/正确答案翻译成中文显示
+  const zhBox = document.getElementById('zhBox');
+  const zhText = document.getElementById('zhText');
+  const zh = zhMap[q.id];
+  if (translationShown[q.id] && zh) {
+    zhBox.classList.remove('hidden');
+    let t = '';
+    if (zh.audio) t += `<p class="mb-2"><span class="font-semibold text-blue-900">听力原文：</span>${escapeHtml(zh.audio)}</p>`;
+    if (zh.passage) t += `<p class="mb-2"><span class="font-semibold text-blue-900">篇章：</span>${escapeHtml(zh.passage)}</p>`;
+    if (zh.q) t += `<p class="mb-2"><span class="font-semibold text-blue-900">题目：</span>${escapeHtml(zh.q)}</p>`;
+    if (zh.opts) {
+      t += '<div class="space-y-1">';
+      zh.opts.forEach((o, i) => { t += `<p><span class="font-bold text-blue-700">${['A','B','C','D'][i]}.</span> ${escapeHtml(o)}</p>`; });
+      t += '</div>';
+    }
+    if (q.type !== 'textarea') {
+      const idx = ['A','B','C','D'].indexOf(q.answer);
+      const ansZh = zh.opts && zh.opts[idx];
+      if (ansZh) t += `<p class="mt-2 pt-2 border-t border-blue-200"><span class="font-semibold text-blue-900">正确答案：</span>${escapeHtml(ansZh)}（${q.answer}）</p>`;
+    }
+    zhText.innerHTML = t;
+  } else {
+    zhBox.classList.add('hidden');
+  }
+
+  document.getElementById('btnPrev').disabled = current === 0;
+  document.getElementById('btnNext').textContent = current === questions.length - 1 ? '交卷' : '下一题';
+  renderNavigator();
+  updateProgress();
+}
+
+function selectOption(letter) {
+  if (submitted) return;
+  const q = getCurrentQuestion();
+  answers[q.id] = letter;
+  if (letter !== q.answer) {
+    explanationShown[q.id] = true;   // 选错：自动弹出"为什么做错"
+    explanationWrong[q.id] = true;
+  } else {
+    // 改对后：若此前是因选错弹出的，则收起；手动点开的不收起
+    if (explanationWrong[q.id]) explanationShown[q.id] = false;
+    explanationWrong[q.id] = false;
+  }
+  renderQuestion();   // 先更新界面，避免保存失败影响显示
+  saveState();
+}
+
+function formatExplanation(q) {
+  let s = '';
+  if (q.type !== 'textarea') {
+    if (explanationWrong[q.id]) {
+      const chosen = answers[q.id];
+      const idxC = ['A','B','C','D'].indexOf(chosen);
+      const wrongText = q.options && q.options[idxC] ? escapeHtml(q.options[idxC]) : chosen;
+      const idxA = ['A','B','C','D'].indexOf(q.answer);
+      const rightText = q.options && q.options[idxA] ? escapeHtml(q.options[idxA]) : q.answer;
+      s += `<p class="mb-2"><span class="font-semibold text-red-700">你选了 ${chosen}（${wrongText}），但正确答案是 ${q.answer}（${rightText}）。</span></p>`;
+    } else {
+      s += `<p class="mb-1"><span class="font-semibold text-green-900">正确答案：</span>${q.answer}</p>`;
+    }
+  }
+  s += `<p>${escapeHtml(q.exp).replace(/\n/g,'<br>')}</p>`;
+  if (q.type === 'textarea') {
+    s += `<div class="mt-2 p-2 bg-white rounded border border-green-200"><p class="font-semibold text-green-900 mb-1">参考范文：</p><pre class="text-sm">${escapeHtml(q.answer)}</pre></div>`;
+  }
+  return s;
+}
+
+function toggleExplanation() {
+  const q = getCurrentQuestion();
+  explanationShown[q.id] = !explanationShown[q.id];
+  renderQuestion();   // 先渲染，再保存；即使 localStorage 不可用也不影响显示
+  saveState();
+}
+
+function toggleTranslation() {
+  const q = getCurrentQuestion();
+  if (!zhMap[q.id]) { alert('本题暂无中文翻译。'); return; }
+  translationShown[q.id] = !translationShown[q.id];
+  renderQuestion();   // 先渲染，再保存
+  saveState();
+}
+
+function playListeningAudio() {
+  const q = getCurrentQuestion();
+  if (!q.audio || !window.speechSynthesis) { alert('当前浏览器不支持语音朗读，请阅读听力原文。'); return; }
+  const text = q.audio.replace(/\n/g, ' ').replace(/M:|W:/g, '');
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = 0.95;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+function prevQuestion() { if (current > 0) { current--; renderQuestion(); } }
+function nextQuestion() {
+  if (current < questions.length - 1) { current++; renderQuestion(); }
+  else { submitExam(); }
+}
+
+function renderNavigator() {
+  const nav = document.getElementById('navigator');
+  nav.innerHTML = '';
+  questions.forEach((q, idx) => {
+    const dot = document.createElement('span');
+    dot.className = `navigator-dot ${answers[q.id] ? 'answered' : ''} ${idx === current ? 'current' : ''}`;
+    dot.title = `第 ${idx+1} 题`;
+    dot.onclick = () => { current = idx; renderQuestion(); };
+    nav.appendChild(dot);
+  });
+}
+function updateProgress() {
+  const pct = ((current + 1) / questions.length) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+}
+
+function submitExam(auto) {
+  if (timerId) clearInterval(timerId);
+  submitted = true; saveState(); showResults();
+}
+
+function calculateScore() {
+  let total = 0, correct = 0, answered = 0, wrong = [];
+  questions.forEach(q => {
+    if (q.type === 'textarea') return; // 主观题不计入客观题统计
+    if (answers[q.id]) answered++;
+    if (answers[q.id] === q.answer) { total += q.score; correct++; }
+    else if (answers[q.id]) wrong.push(q);
+  });
+  return { total, correct, answered, wrong };
+}
+
+function showResults() {
+  document.getElementById('examScreen').classList.add('hidden');
+  document.getElementById('resultScreen').classList.remove('hidden');
+  const used = EXAM_DURATION - timeLeft;
+  const h = String(Math.floor(used / 3600)).padStart(2, '0');
+  const m = String(Math.floor((used % 3600) / 60)).padStart(2, '0');
+  const s = String(used % 60).padStart(2, '0');
+  document.getElementById('resTime').textContent = `${h}:${m}:${s}`;
+
+  const stats = calculateScore();
+  const objTotal = questions.filter(q=>q.type!=='textarea').reduce((a,b)=>a+b.score,0);
+  const objScore = stats.total;
+  document.getElementById('resTotal').textContent = objScore;
+  const rate = stats.answered ? Math.round((stats.correct / stats.answered) * 100) : 0;
+  document.getElementById('resRate').textContent = rate + '%';
+
+  // Section summary
+  const secs = ['I','II','III','IV','V','VI'];
+  const secMap = {I:'听力理解',II:'词汇与结构',III:'完形填空',IV:'阅读理解',V:'段落翻译',VI:'短文写作'};
+  let summary = '<h3 class="font-semibold mb-2">各题块得分（客观题）</h3><div class="grid grid-cols-2 md:grid-cols-3 gap-3">';
+  secs.forEach(sec => {
+    const qs = questions.filter(q=>q.section===sec && q.type!=='textarea');
+    if (!qs.length) return;
+    const got = qs.filter(q=>answers[q.id]===q.answer).reduce((a,b)=>a+b.score,0);
+    const full = qs.reduce((a,b)=>a+b.score,0);
+    summary += `<div class="border rounded p-3 text-center"><div class="text-xs text-gray-500">${secMap[sec]}</div><div class="text-lg font-bold text-blue-700">${got}/${full}</div></div>`;
+  });
+  summary += '</div>';
+  summary += '<p class="text-xs text-gray-500 mt-2">注：翻译和写作为主观题，系统无法自动评分，请参考范文自行估分。</p>';
+  document.getElementById('sectionSummary').innerHTML = summary;
+
+  showResultTab('wrong');
+}
+
+let currentResultTab = 'wrong';
+function showResultTab(tab) {
+  currentResultTab = tab;
+  document.getElementById('tabWrong').className = tab==='wrong' ? 'px-3 py-2 text-sm font-medium border-b-2 border-blue-600 text-blue-700' : 'px-3 py-2 text-sm font-medium border-b-2 border-transparent text-gray-600 hover:text-gray-800';
+  document.getElementById('tabAll').className = tab==='all' ? 'px-3 py-2 text-sm font-medium border-b-2 border-blue-600 text-blue-700' : 'px-3 py-2 text-sm font-medium border-b-2 border-transparent text-gray-600 hover:text-gray-800';
+  const list = document.getElementById('resultList');
+  list.innerHTML = '';
+  const stats = calculateScore();
+  let qs = [];
+  if (tab === 'wrong') {
+    qs = stats.wrong;
+    if (!qs.length) { list.innerHTML = '<p class="text-gray-500 text-center py-6">恭喜，客观题全部正确！可切换到「全部解析」查看主观题范文。</p>'; return; }
+  } else {
+    qs = questions.slice();
+  }
+  qs.forEach((q, idx) => {
+    const div = document.createElement('div');
+    div.className = 'border rounded-lg p-4 bg-gray-50';
+    let header = `<div class="flex justify-between items-start mb-2"><span class="font-semibold text-sm">第 ${questions.indexOf(q)+1} 题 · ${getSectionName(q.section)} · ${q.score} 分</span>`;
+    if (q.type !== 'textarea') {
+      const cls = answers[q.id] === q.answer ? 'text-green-700 bg-green-100' : (answers[q.id] ? 'text-red-700 bg-red-100' : 'text-gray-600 bg-gray-200');
+      const txt = answers[q.id] === q.answer ? '正确' : (answers[q.id] ? '错误' : '未答');
+      header += `<span class="text-xs px-2 py-0.5 rounded ${cls}">${txt}</span></div>`;
+    } else { header += '</div>'; }
+    let body = `<div class="text-sm mb-2">${escapeHtml(q.question).replace(/\n/g,'<br>')}</div>`;
+    if (q.passage) body = `<div class="text-xs text-gray-600 mb-2 p-2 bg-white rounded border border-gray-200">${escapeHtml(q.passage).replace(/\n/g,'<br>')}</div>` + body;
+    if (q.audio) body += `<div class="text-xs text-gray-600 mb-2">听力原文：${escapeHtml(q.audio).replace(/\n/g,'<br>')}</div>`;
+    if (q.type !== 'textarea') {
+      body += `<div class="text-sm mb-2">你的答案：<span class="font-medium ${answers[q.id]===q.answer?'text-green-700':'text-red-700'}">${answers[q.id] || '未答'}</span>　正确答案：<span class="font-medium text-green-700">${q.answer}</span></div>`;
+    }
+    body += `<div class="text-sm leading-relaxed"><span class="font-semibold text-green-800">解析：</span>${escapeHtml(q.exp).replace(/\n/g,'<br>')}</div>`;
+    if (q.type === 'textarea') {
+      body += `<div class="mt-2 p-2 bg-white rounded border border-green-200 text-sm"><span class="font-semibold text-green-900">参考范文：</span><pre class="mt-1 whitespace-pre-wrap">${escapeHtml(q.answer)}</pre></div>`;
+    }
+    div.innerHTML = header + body;
+    list.appendChild(div);
+  });
+}
+
+function restartExam() {
+  clearState();
+  answers = {}; explanationShown = {}; translationShown = {}; explanationWrong = {}; current = 0; timeLeft = EXAM_DURATION; submitted = false; startedAt = Date.now();
+  document.getElementById('resultScreen').classList.add('hidden');
+  document.getElementById('examScreen').classList.remove('hidden');
+  startTimer(); renderQuestion(); renderNavigator();
+  saveState();
+}
+function backToStart() {
+  document.getElementById('resultScreen').classList.add('hidden');
+  document.getElementById('startScreen').classList.remove('hidden');
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', e => {
+  if (document.getElementById('examScreen').classList.contains('hidden')) return;
+  const q = getCurrentQuestion();
+  if (q.type !== 'textarea') {
+    if (['a','b','c','d'].includes(e.key.toLowerCase())) selectOption(e.key.toUpperCase());
+  }
+  if (e.key === 'ArrowLeft') prevQuestion();
+  if (e.key === 'ArrowRight') nextQuestion();
+});
+
+// Prevent accidental leave
+window.addEventListener('beforeunload', e => {
+  if (!submitted && document.getElementById('examScreen').classList.contains('hidden') === false) {
+    e.preventDefault(); e.returnValue = '';
+  }
+});
+</script>
+</body>
+</html>
